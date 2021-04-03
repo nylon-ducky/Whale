@@ -1,0 +1,61 @@
+body {
+    display: flex; 
+  }
+  
+  .game-container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .sky {
+    background-color: lightblue;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+  }
+  
+  .ground {
+    background-color: #7a5a2f;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1
+  }
+  
+  .bird {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/01/31/19/15/whale-2026572_960_720.png");
+    /* 
+    url("https://cdn.pixabay.com/photo/2016/10/05/16/43/penis-1717074_960_720.png");
+    
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+
+    */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+  
+  .obstacle {
+    background: url('https://github.com/kubowania/flappy-bird/blob/master/flappybird-pipe.png?raw=true');
+    width: 60px;
+    height: 300px;
+    position: absolute;
+  }
+  
+  .topObstacle {
+    background: url('https://github.com/kubowania/flappy-bird/blob/master/flappybird-pipe.png?raw=true');
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+  }
+  
+  
